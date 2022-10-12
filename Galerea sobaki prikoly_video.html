@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+    <style type="text/css">
+        body {
+
+            background-color: rgba(123, 211, 211, 0.925);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed
+        }
+
+        .foto {
+            position: absolute;
+            display: inline-block;
+            left: 1%;
+            top: 12%;
+            width: 98%;
+            height: 88%;
+            overflow: auto;
+            text-align: center;
+        }
+
+        .menu {
+            display: inline-block;
+            border: 2px solid rgb(25, 0, 255);
+            border-radius: 10px;
+            background-color: dodgerblue;
+            margin: 3px;
+            text-align: center;
+            padding: 10px;
+            font: bold 20px/1.4'Comic Sans MS';
+        }
+
+        .menu:hover {
+            outline: 4px solid rgb(25, 0, 255);
+        }
+
+        iframe {
+            width: 80%;
+            height: 90%;
+            margin-bottom: 100px;
+        }
+
+        @media (max-width:1550px) {
+
+            /* для горизонтальной мобильной версии*/
+            .menu {
+                padding: 5px;
+                font: bold 14px/1.4'Comic Sans MS';
+            }
+
+            iframe {
+                width: 65%;
+                height: 90%;
+                margin-bottom: 50px;
+            }
+
+        }
+
+        @media (max-width: 1550px) and (orientation:portrait) {
+
+            /* для вертикальной мобильной версии*/
+            .menu {
+                padding: 5px;
+                font: bold 30px/1.4'Comic Sans MS';
+            }
+
+            iframe {
+                width: 90%;
+                height: 30%;
+                margin-bottom: 50px;
+            }
+
+            .foto {
+                height: 90%;
+                top: 6%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style=" position:fixed; z-index: 999; top: 1%;
+        display:flex;justify-content:center;width:100vw;">
+
+        <div id="glavnay" class="menu" onclick="location.href = 'index.html'">
+            На главную
+        </div>
+        <div id="pismo" class="menu"  onclick="location.href='mailto:lemon.orange1111@gmail.com?subject=Вопросы, пожелания, предложения &Body=Текст письма:' "
+        title="Пожелания, предложения, вопросы">
+            Написать письмо
+        </div>
+        <div id="Nakorm" class="menu">
+            Покорми эвакуированного
+        </div>
+    </div>
+
+
+    <div class="foto">
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/wNqZM7e0_18" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/3fYZpBGxC1E" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/ioz3Aw8uFBU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/QZVkA1QQG2M" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/QETlDZh_H-c" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/v2IldhBysiw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/DeALxuQq2ug"
+            title="СМЕШНЫЕ СОБАКИ ДО СЛЁЗ(ЭТО ВИДЕО ЗАСТАВИТ ТЕБЯ УЛЫБНУТЬСЯ)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/apGcWWXZN1k"
+            title="СМЕШНЫЕ СОБАКИ/Про собак/смех до слез/ЩЕНКИ приколы/Собачья ЖИЗНЬ" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/cycOAujVdOc"
+            title="Самые смешные животные / Приколы с котами и собаками 2021 #2" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/j6EKMYnqssE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/crrOVW1gd5I"
+            title="ТОП ЛУЧШИХ ПРОВИНИВШИХСЯ СОБАК или КАК НАКОСЯЧИЛИ СОБАКИ Новые ютуб видео приколы про собак 2018"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+
+    </div>
+
+</body>
+
+</html>
