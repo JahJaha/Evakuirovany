@@ -277,7 +277,7 @@
             if (to < mas.length - 1) to++
             else
                 to = 0;
-            obj.src = "v_evakuazii\/" + mas[to] + ".mp4";
+            obj.src = "vEvakuazii\/" + mas[to] + ".mp4";
         }
 
         function left_arrow() // Открытие предыдущей картинки(движение влево)
@@ -286,12 +286,12 @@
             if (to > 0) to--;
             else
                 to = mas.length - 1;
-            obj.src = "v_evakuazii\/" + mas[to] + ".mp4";
+            obj.src = "vEvakuazii\/" + mas[to] + ".mp4";
         }
 
         mas.forEach((item, index) => {    //Добавление иконок
             let elem = document.createElement("video");
-            elem.setAttribute("src", "v_evakuazii/" + item + ".mp4");
+            elem.setAttribute("src", "vEvakuazii/" + item + ".mp4");
             elem.setAttribute("alt", "кликни");
             elem.setAttribute("title", "кликни");
             elem.setAttribute("class", "foto");
@@ -300,7 +300,7 @@
 
             elem.onclick = function (event) { //клик на иконки
                 var obj = document.getElementById("img");
-                obj.src = "v_evakuazii\/" + item + ".mp4";
+                obj.src = "vEvakuazii\/" + item + ".mp4";
                 to = item - 1;
             };
         });

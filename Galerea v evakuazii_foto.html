@@ -228,7 +228,7 @@
     
         <div class="fotoGlavnoe">
     
-            <img src="v_evakuazii/1.jpg" id="img" style=" max-height: 90%;max-width: 90%; min-width: 50%;min-height: 50%; display: inline-block;
+            <img src="vEvakuazii/1.jpg" id="img" style=" max-height: 90%;max-width: 90%; min-width: 50%;min-height: 50%; display: inline-block;
                 vertical-align: middle; ">
             </img> <br />
     
@@ -271,7 +271,7 @@
             if (to < mas.length - 1) to++
             else
                 to = 0;
-            obj.src = "v_evakuazii\/" + mas[to] + ".jpg";
+            obj.src = "vEvakuazii\/" + mas[to] + ".jpg";
         }
 
         function left_arrow() // Открытие предыдущей картинки(движение влево)
@@ -280,12 +280,12 @@
             if (to > 0) to--;
             else
                 to = mas.length - 1;
-            obj.src = "v_evakuazii\/" + mas[to] + ".jpg";
+            obj.src = "vEvakuazii\/" + mas[to] + ".jpg";
         }
 
         mas.forEach((item, index) => {    //Добавление иконок
             let elem = document.createElement("img");
-            elem.setAttribute("src", "v_evakuazii/" + item + ".jpg");
+            elem.setAttribute("src", "vEvakuazii/" + item + ".jpg");
             elem.setAttribute("alt", "кликни");
             elem.setAttribute("title", "кликни");
             elem.setAttribute("class", "foto");
@@ -293,7 +293,7 @@
 
             elem.onclick = function (event) { //клик на иконки
                 var obj = document.getElementById("img");
-                obj.src = "v_evakuazii\/" + item + ".jpg";
+                obj.src = "vEvakuazii\/" + item + ".jpg";
                 to = item - 1;
             };
         });
