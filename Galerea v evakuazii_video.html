@@ -1,271 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Галерея</title>
-        <style type="text/css">
-            body {
-                background-color: rgba(123, 211, 211, 0.925);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                overflow: hidden;
-            }
-    
-            .fotoGlavnoe {
-                position: fixed;
-                text-align: center;
-                left: 4.2%;
-                top: 5.5%;
-                width: 63%;
-                height: 75%
-            }
-    
-            .fotoGlavnoe:before {
-                content: '';
-                display: inline-block;
-                height: 100%;
-                vertical-align: middle;
-            }
-    
-            .ramka {
-                position: fixed;
-                top: 1%;
-                left: 1%;
-                width: 70%;
-                height: 85%;
-            }
-    
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+    <style type="text/css">
+        body {
+            background-color: rgba(123, 211, 211, 0.925);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .fotoGlavnoe {
+            position: fixed;
+            text-align: center;
+            left: 4.2%;
+            top: 5.5%;
+            width: 63%;
+            height: 75%
+        }
+
+        .fotoGlavnoe:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .ramka {
+            position: fixed;
+            top: 1%;
+            left: 1%;
+            width: 70%;
+            height: 85%;
+        }
+
+        .menuGlavnoe {
+            position: fixed;
+            z-index: 200;
+            left: 70%;
+            top: 2.5%;
+            right: 30px;
+            text-align: center
+        }
+
+        .menu {
+            display: inline-block;
+            border: 3px solid #3816d1f3;
+            border-radius: 10px;
+            background-color: rgba(113, 160, 190, 0.925);
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Comic Sans MS;
+        }
+
+        .foto {
+            position: relative;
+            z-index: 999;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+        }
+
+        .menu:hover,
+        .foto:hover {
+            outline: 5px solid rgb(25, 0, 255);
+        }
+
+        .knopkaLevo {
+            position: absolute;
+            width: 30%;
+            height: 30%;
+            background: url("strelka levo.png");
+            background-size: cover;
+            display: inline-block;
+        }
+
+        .knopkaLevo:hover {
+            background-image: url("strelka levo_hover.png")
+        }
+
+        .knopkaPravo {
+            position: absolute;
+            left: 70%;
+            width: 30%;
+            height: 30%;
+            background: url("strelka pravo.png");
+            background-size: cover;
+            display: inline-block;
+        }
+
+        .knopkaPravo:hover {
+            background-image: url("strelka pravo_ hover.png")
+        }
+
+        .knopkaLevoPravo {
+            position: fixed;
+            top: 85%;
+            left: 26%;
+            width: 20%;
+            height: 40%;
+            z-index: 999;
+        }
+
+        .kartinka {
+            position: fixed;
+            top: 82%;
+            left: 15%;
+            width: 30%;
+            height: 30%;
+        }
+
+        .fotoMini {
+            position: absolute;
+            display: inline-block;
+            left: 72%;
+            top: 15%;
+            width: 26%;
+            height: 84%;
+            overflow: auto;
+            text-align: center;
+        }
+
+        @media (max-width:1550px) {
+
+            /* для горизонтальной мобильной версии*/
             .menuGlavnoe {
-                position: fixed;
-                z-index: 200;
-                left: 70%;
-                top: 2.5%;
-                right: 30px;
-                text-align: center
+                left: 73%;
             }
-    
+
             .menu {
-                display: inline-block;
-                border: 3px solid #3816d1f3;
-                border-radius: 10px;
-                background-color: rgba(113, 160, 190, 0.925);
-                text-align: center;
-                padding: 10px;
-                font-size: 20px;
-                font-weight: bold;
-                font-family: Comic Sans MS;
+                font-size: 10px;
+                padding: 3px;
             }
-    
-            .foto {
-                width: 150px;
-                height: 150px;
-                margin: 3px
-            }
-    
-            .menu:hover,
-            .foto:hover {
-                outline: 5px solid rgb(25, 0, 255);
-            }
-    
-            .knopkaLevo {
-                position: absolute;
-                width: 30%;
-                height: 30%;
-                background: url("strelka levo.png");
-                background-size: cover;
-                display: inline-block;
-            }
-    
-            .knopkaLevo:hover {
-                background-image: url("strelka levo_hover.png")
-            }
-    
-            .knopkaPravo {
-                position: absolute;
-                left: 70%;
-                width: 30%;
-                height: 30%;
-                background: url("strelka pravo.png");
-                background-size: cover;
-                display: inline-block;
-            }
-    
-            .knopkaPravo:hover {
-                background-image: url("strelka pravo_ hover.png")
-            }
-    
-            .knopkaLevoPravo {
-                position: fixed;
-                top: 85%;
-                left: 26%;
-                width: 20%;
-                height: 40%;
-                z-index: 999;
-            }
-    
+
             .kartinka {
                 position: fixed;
-                top: 82%;
+                top: 78%;
                 left: 15%;
                 width: 30%;
                 height: 30%;
             }
-    
-            .fotoMini {
-                position: absolute;
-                display: inline-block;
-                left: 72%;
-                top: 15%;
-                width: 26%;
-                height: 84%;
-                overflow: auto;
-                text-align: center;
-            }
-    
-            @media (max-width:1550px) {
-    
-                /* для горизонтальной мобильной версии*/
-                .menuGlavnoe {
-                    left: 73%;
-                }
-    
-                .menu {
-                    font-size: 10px;
-                    padding: 3px;
-                }
-    
-                .kartinka {
-                    position: fixed;
-                    top: 78%;
-                    left: 15%;
-                    width: 30%;
-                    height: 30%;
-                }
-    
-                .foto {
-                    width: 100px;
-                    height: 100px;
-                    margin: 3px
-                }
-            }
-    
-            @media (max-width: 1550px) and (orientation:portrait) {
-    
-                /* для вертикальной мобильной версии*/
-                .fotoGlavnoe {
-                    position: fixed;
-                    left: 10%;
-                    top: 10%;
-                    width: 80%;
-                    height: 32%
-                }
-    
-                .ramka {
-                    position: fixed;
-                    top: 6%;
-                    left: 1%;
-                    width: 98%;
-                    height: 40%;
-                }
-    
-                .menuGlavnoe {
-                    top: 1.5%;
-                    left: 10%;
-                    right: 10%;
-                    text-align: center
-                }
-    
-                .kartinka {
-                    position: fixed;
-                    top: 44%;
-                    left: 2%;
-                    width: 70%;
-                    height: 70%;
-                }
-    
-                .knopkaLevoPravo {
-                    top: 47%;
-                    left: 26%;
-                    width: 50%;
-                    height: 20%;
-                    z-index: 999;
-                }
-    
-                .fotoMini {
-                    left: 1%;
-                    top: 55%;
-                    text-align: center;
-                    width: 98%;
-                    height: 44%;
-                }
-    
-                .menu {
-                    font-size: 20px;
-                    padding: 10px;
-                }
-    
-                .foto {
-                    width: 300px;
-                    height: 300px;
-                    margin: 3px
-                }
-    
-                .fotoGlavnoe {
-                    text-align: center;
-                    left: 5%;
-                    top: 8.5%;
-                    width: 90%;
-                    height: 35%
-                }
-            }
-        </style>
-    </head>
-    
-    <body>
 
-        <img src="ramka.png" class="ramka"></img>
-    
-        <div class="fotoGlavnoe">
-    
-            <video style=" max-height: 90%;max-width: 90%; min-width: 50%;min-height: 50%; display: inline-block;
-            vertical-align: middle; "
-             controls="controls" poster="Do_evakuazii/zastavka.jpg" id="img" autoplay>
-                <src="bla-bla-bla" type='video/ogg; codecs="theora, vorbis"'>
-                    <src="bla-bla-bla" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                        <src="bla-bla-bla" type='video/webm; codecs="vp8, vorbis"'>
-                            Тег video не поддерживается вашим браузером.
-                            <a href="bla-bla-bla">Скачайте видео</a>.
-            </video>
+            .foto {
+                width: 100px;
+                height: 100px;
+                margin: 3px
+            }
+        }
+
+        @media (max-width: 1550px) and (orientation:portrait) {
+
+            /* для вертикальной мобильной версии*/
+            .fotoGlavnoe {
+                position: fixed;
+                left: 10%;
+                top: 10%;
+                width: 80%;
+                height: 32%
+            }
+
+            .ramka {
+                position: fixed;
+                top: 6%;
+                left: 1%;
+                width: 98%;
+                height: 40%;
+            }
+
+            .menuGlavnoe {
+                top: 1.5%;
+                left: 10%;
+                right: 10%;
+                text-align: center
+            }
+
+            .kartinka {
+                position: fixed;
+                top: 44%;
+                left: 2%;
+                width: 70%;
+                height: 70%;
+            }
+
+            .knopkaLevoPravo {
+                top: 47%;
+                left: 26%;
+                width: 50%;
+                height: 20%;
+                z-index: 999;
+            }
+
+            .fotoMini {
+                left: 1%;
+                top: 55%;
+                text-align: center;
+                width: 98%;
+                height: 44%;
+            }
+
+            .menu {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            .foto {
+                width: 300px;
+                height: 300px;
+                margin: 3px
+            }
+
+            .fotoGlavnoe {
+                text-align: center;
+                left: 5%;
+                top: 8.5%;
+                width: 90%;
+                height: 35%
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="ramka.png" class="ramka"></img>
+
+    <div class="fotoGlavnoe">
+
+        <video style=" max-height: 90%;max-width: 90%; min-width: 50%;min-height: 50%; display: inline-block;
+            vertical-align: middle; " controls="controls" poster="Do_evakuazii/zastavka.jpg" id="img" autoplay>
+            <src="bla-bla-bla" type='video/ogg; codecs="theora, vorbis"'>
+                <src="bla-bla-bla" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    <src="bla-bla-bla" type='video/webm; codecs="vp8, vorbis"'>
+                        Тег video не поддерживается вашим браузером.
+                        <a href="bla-bla-bla">Скачайте видео</a>.
+        </video>
+    </div>
+
+    <div class="knopkaLevoPravo">
+        <div class="knopkaLevo" onClick="javascript: left_arrow()"></div>
+        <div class="knopkaPravo" onClick="javascript: right_arrow()"></div>
+
+    </div>
+
+    <div class="kartinka">
+        <img src="dancing-cat.gif" style="position: absolute;display: inline-block;width: 50%;">
+        <img src="dancing-cat.gif" style="position: absolute;left: 90%; display: inline-block; width: 50%;">
+
+    </div>
+
+    <div class="menuGlavnoe">
+        <div id="glavnay" class="menu" onclick="location.href = 'index.html'">
+            На <br> главную
         </div>
-    
-        <div class="knopkaLevoPravo">
-            <div class="knopkaLevo" onClick="javascript: left_arrow()"></div>
-            <div class="knopkaPravo" onClick="javascript: right_arrow()"></div>
-    
-        </div>
-    
-        <div class="kartinka">
-            <img src="dancing-cat.gif" style="position: absolute;display: inline-block;width: 50%;">
-            <img src="dancing-cat.gif" style="position: absolute;left: 90%; display: inline-block; width: 50%;">
-    
-        </div>
-    
-        <div class="menuGlavnoe">
-            <div id="glavnay" class="menu" onclick="location.href = 'index.html'">
-                На <br> главную
-            </div>
-            <div id="pismo" class="menu"  onclick="location.href='mailto:lemon.orange1111@gmail.com?subject=Вопросы, пожелания, предложения &Body=Текст письма:' "
+        <div id="pismo" class="menu"
+            onclick="location.href='mailto:lemon.orange1111@gmail.com?subject=Вопросы, пожелания, предложения &Body=Текст письма:' "
             title="Пожелания, предложения, вопросы">
-                Написать <br> письмо
-            </div>
-            <div id="Nakorm" class="menu">
-                Покорми<br>эвакуированного
-            </div>
+            Написать <br> письмо
         </div>
-    
-        <div id="results" class="fotoMini"></div>
+        <div id="Nakorm" class="menu">
+            Покорми<br>эвакуированного
+        </div>
+    </div>
+
+    <div id="results" class="fotoMini"></div>
 
     <script>
         var mas = [101, 102] // массив видео
