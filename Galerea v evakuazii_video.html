@@ -179,7 +179,7 @@
     
                 .kartinka {
                     position: fixed;
-                    top: 46%;
+                    top: 44%;
                     left: 2%;
                     width: 70%;
                     height: 70%;
@@ -207,8 +207,8 @@
                 }
     
                 .foto {
-                    width: 350px;
-                    height: 350px;
+                    width: 300px;
+                    height: 300px;
                     margin: 3px
                 }
     
@@ -268,7 +268,7 @@
         <div id="results" class="fotoMini"></div>
 
     <script>
-        var mas = [101, 102,] // массив видео
+        var mas = [101, 102] // массив видео
         var to = 0;  // Счетчик, указывающий на текущую картинки
 
         function right_arrow() // Открытие следующей картинки(движение вправо)
@@ -295,7 +295,7 @@
             elem.setAttribute("alt", "кликни");
             elem.setAttribute("title", "кликни");
             elem.setAttribute("class", "foto");
-            elem.setAttribute("style", "border: 10px double black;");
+            elem.setAttribute("style", "border: 3px dotted black;");
             document.getElementById("results").appendChild(elem);
 
             elem.onclick = function (event) { //клик на иконки
