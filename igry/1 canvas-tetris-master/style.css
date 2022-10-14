@@ -30,6 +30,7 @@ button {
 }
 
 .button1 {
+    touch-action: none;
     left: 75%;
     top: 40%;
     width: 300px;
@@ -37,6 +38,7 @@ button {
 }
 
 .button2 {
+    touch-action: none;
     left: 75%;
     top: 50%;
     width: 150px;
@@ -44,6 +46,7 @@ button {
 }
 
 .button3 {
+    touch-action: none;
     left: 83%;
     top: 50%;
     width: 150px;
@@ -51,6 +54,7 @@ button {
 }
 
 .button4 {
+    touch-action: none;
     left: 75%;
     top: 60%;
     width: 300px;
@@ -58,6 +62,7 @@ button {
 }
 
 .button5 {
+    touch-action: none;
     left: 75%;
     top: 70%;
     width: 300px;
@@ -147,7 +152,7 @@ button {
         top: 92%;
         width: 400px;
         height: 100px;
-        touch-action: none
+        
     }
     
     .button2 {
@@ -155,14 +160,14 @@ button {
         top: 85%;
         width: 200px;
         height: 100px;
-        touch-action: none
+       
     }
     .button3 {
         left: 75%;
         top: 85%;
         width: 200px;
         height: 100px;
-        touch-action: none
+       
     }
     
     .button4 {
@@ -170,13 +175,13 @@ button {
         top: 85%;
         width: 400px;
         height: 100px;
-        touch-action: none
+        
     }
     .button5 {
         left: 5%;
         top: 92%;
         width: 400px;
         height: 100px;
-        touch-action: none
+        
     }
 }
