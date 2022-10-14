@@ -11,3 +11,19 @@ document.body.onkeydown = function( e ) {
         render();
     }
 };
+
+document.body.onclick = function( e ) {
+    var keys = {
+        button2: 'left',
+        button3: 'right',
+        button4: 'down',
+        button1: 'rotate',
+        button5: 'drop'
+    };
+   
+    if (typeof keys[ e.target.className ] != 'undefined') {
+        keyPress( keys[ e.target.className ] );
+        render();
+    };
+};
+

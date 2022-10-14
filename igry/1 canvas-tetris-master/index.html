@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HTML5 Tetris</title>
-        <link rel='stylesheet' href='style.css' />
-    </head>
-    <body>
-        <audio id="clearsound" src="sound/pop.ogg" preload="auto"></audio>
-        <canvas  width='500' height='800'></canvas>
+
+<head>
+    <title>HTML5 Tetris</title>
+    <link rel='stylesheet' href='style.css' />
+</head>
+
+<body>
+    <audio id="clearsound" src="sound/pop.ogg" preload="auto"></audio>
+
+    <div class="igra">
+        <canvas width='500' height='800'></canvas>
+
         <button id="playbutton" onclick="playButtonClicked();">Играть</button>
-        <script src='js/tetris.js'></script>
-        <script src='js/controller.js'></script>
-        <script src='js/render.js'></script>
-    </body>
+    </div>
+
+    <button class="button1"    onclick="">Поворот</button>
+    <button class="button2"   onclick="">Лево</button>
+    <button class="button3"  onclick="">Право</button>
+    <button class="button4"  onclick="">низ</button>
+    <button class="button5"  onclick="">низ быстро</button>
+
+
+    <script src='js/tetris.js'></script>
+    <script src='js/controller.js'></script>
+    <script src='js/render.js'></script>
+</body>
+
 </html>

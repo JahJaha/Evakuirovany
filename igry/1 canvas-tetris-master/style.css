@@ -11,12 +11,8 @@ canvas {
     border: 5px solid rgb(240, 19, 19);
 }
 
-#playbutton {
-    width: 150px;
-    height: 50px;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
+button {
+    position: absolute;
     font-family: Arial, sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -24,9 +20,150 @@ canvas {
     cursor: pointer;
     border-radius: 30px;
     border: 5px solid rgba(224, 9, 9, 0.877);
-
 }
+
+#playbutton {
+    left: 40%;
+    top: 110%;
+    width: 150px;
+    height: 50px;
+}
+
+.button1 {
+    left: 75%;
+    top: 40%;
+    width: 300px;
+    height: 50px;
+}
+
+.button2 {
+    left: 75%;
+    top: 50%;
+    width: 150px;
+    height: 50px;
+}
+
+.button3 {
+    left: 83%;
+    top: 50%;
+    width: 150px;
+    height: 50px;
+}
+
+.button4 {
+    left: 75%;
+    top: 60%;
+    width: 300px;
+    height: 50px;
+}
+
+.button5 {
+    left: 75%;
+    top: 70%;
+    width: 300px;
+    height: 50px;
+}
+
+
+
 
 #playbutton:hover {
     background-color: rgb(253, 11, 11);
+}
+
+.igra {
+    position: absolute;
+    left: 30%;
+    width: 40%;
+    height: 80%
+}
+
+@media (max-width:1000px) {
+
+    /* для горизонтальной мобильной версии*/
+    .igra {
+        zoom: 0.5;
+    }
+    .button1 {
+        left: 65%;
+        top: 70%;
+        width: 300px;
+        height: 50px;
+    }
+    
+    .button2 {
+        left: 65%;
+        top: 50%;
+        width: 150px;
+        height: 50px;
+    }
+    .button3 {
+        left: 80%;
+        top: 50%;
+        width: 150px;
+        height: 50px;
+    }
+    
+    .button4 {
+        left: 5%;
+        top: 50%;
+        width: 300px;
+        height: 50px;
+    }
+    .button5 {
+        left: 5%;
+        top: 70%;
+        width: 300px;
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 1000px) and (orientation:portrait) {
+
+    /* для вертикальной мобильной версии*/
+    .igra {
+        zoom: 1.5;
+        left: 11%;
+    }
+
+    #playbutton {
+        position: absolute;
+        left: 65%;
+        top: 90%;
+        width: 200px;
+        height: 50px;
+    }
+    .button1 {
+        left: 55%;
+        top: 92%;
+        width: 400px;
+        height: 100px;
+    }
+    
+    .button2 {
+        left: 55%;
+        top: 85%;
+        width: 200px;
+        height: 100px;
+    }
+    .button3 {
+        left: 75%;
+        top: 85%;
+        width: 200px;
+        height: 100px;
+    }
+    
+    .button4 {
+        left: 5%;
+        top: 85%;
+        width: 400px;
+        height: 100px;
+    }
+    .button5 {
+        left: 5%;
+        top: 92%;
+        width: 400px;
+        height: 100px;
+    }
 }
