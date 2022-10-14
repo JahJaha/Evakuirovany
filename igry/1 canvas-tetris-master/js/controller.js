@@ -26,6 +26,7 @@ document.body.onclick = function( e ) {
         keyPress( keys[ e.target.className ] );
         render();
     };
-    event.preventDefault();
+    e.preventDefault();
 };
+
 
