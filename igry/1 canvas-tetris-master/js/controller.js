@@ -20,10 +20,12 @@ document.body.onclick = function( e ) {
         button1: 'rotate',
         button5: 'drop'
     };
-   
+
+    // e.preventDefault();
     if (typeof keys[ e.target.className ] != 'undefined') {
         keyPress( keys[ e.target.className ] );
         render();
     };
+    event.preventDefault();
 };
 

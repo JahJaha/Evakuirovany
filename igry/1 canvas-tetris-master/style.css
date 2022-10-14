@@ -84,6 +84,14 @@ button {
     .igra {
         zoom: 0.5;
     }
+    #playbutton {
+        position: absolute;
+        left: 37%;
+        top: 113%;
+        width: 200px;
+        height: 50px;
+    }
+    
     .button1 {
         left: 65%;
         top: 70%;
@@ -139,6 +147,7 @@ button {
         top: 92%;
         width: 400px;
         height: 100px;
+        touch-action: none
     }
     
     .button2 {
@@ -146,12 +155,14 @@ button {
         top: 85%;
         width: 200px;
         height: 100px;
+        touch-action: none
     }
     .button3 {
         left: 75%;
         top: 85%;
         width: 200px;
         height: 100px;
+        touch-action: none
     }
     
     .button4 {
@@ -159,11 +170,13 @@ button {
         top: 85%;
         width: 400px;
         height: 100px;
+        touch-action: none
     }
     .button5 {
         left: 5%;
         top: 92%;
         width: 400px;
         height: 100px;
+        touch-action: none
     }
 }
