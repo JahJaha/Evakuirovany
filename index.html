@@ -98,7 +98,11 @@
             .rozdel{
                 font-size: 35px;
             }
-            #radiobells_container{width:230px;margin-left: 0px;}
+            #radiobells_container{width: 240px; cursor: pointer;
+            font: 30px comic sans ms;
+            height: 80%;
+            border-radius: 12px;
+            border: 1px solid blue; }
 
         @media (max-width:1000px) {
 
@@ -310,13 +314,8 @@
 
             <td >
                 <!--  Радио -->
-                <div id="radiobells_container"><a href="https://www.radiobells.com/"
-                        id="RP_link">Онлайн радио</a>
-                    #radiobells_script_hash</div>
-                <link href="https://www.radiobells.com/script/style.css" type="text/css" rel="stylesheet" />
-                <script
-                    type="text/javascript">var rad_backcolor = "#fbfff2"; var rad_logo = "white"; var rad_autoplay = false; var rad_width = "responsive"; var rad_width_px = 200; var rad_stations = [['https://chanson.hostingradio.ru:8041/chanson256.mp3', 'Радио Шансон', 'chanson'], ['https://www.liveradio.es/http://online.radioroks.ua/RadioROKS_HD', 'Radio Roks', 'radiorocks'], ['https://www.liveradio.es/http://online.hitfm.ua/HitFM_HD', 'Хiт FM', 'hitfmua'], ['https://cast.radiogroup.com.ua/retro', 'Ретро FM Украина', 'retrofm'], ['https://link.smmbox.ru/http://online.kissfm.ua/KissFM_HD', 'Kiss FM', 'kissfm']];</script>
-                <script type="text/javascript" src="https://www.radiobells.com/script/v2_1.js" charset="UTF-8"></script>
+                
+                <button id="radiobells_container" onclick="window.open('Radio.html', 'radio', 'width=185,height=350,top='+((screen.height/100)*30)+',left='+((screen.width/100)*90)+',' )" > Радио </button>
             </td>
         </tr>
     </table>
