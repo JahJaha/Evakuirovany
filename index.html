@@ -98,11 +98,7 @@
             .rozdel{
                 font-size: 35px;
             }
-            #radiobells_container{width: 240px; cursor: pointer;
-            font: 30px comic sans ms;
-            height: 80%;
-            border-radius: 12px;
-            border: 1px solid blue; }
+            #radiobells_container{width:230px;margin-left: 0px;}
 
         @media (max-width:1000px) {
 
@@ -243,8 +239,8 @@
         <tr>
             <td>
                 <div class="rozdel"> <strong> Я до <br> эвакуации</strong></div> <button
-                    onclick="location.href = 'Galerea do evakuazii_foto.html'">Фото</button>
-                <button onclick="location.href = 'Galerea do evakuazii_video.html'">Видео</button>
+                    onclick="openNewWin('Galerea do evakuazii_foto.html')">Фото</button>
+                <button onclick="openNewWin( 'Galerea do evakuazii_video.html')">Видео</button>
             </td >
             <td rowspan="2"style="position:relative;">
                 <center><img src="glavnoe.png" class="foto" alt="Это моя фотка!!!" title="Это я, эвакуированный из Славянска"></center>
@@ -256,20 +252,20 @@
             </td>
             <td>
                 <div class="rozdel"> <strong> Коты <br> приколы</strong></div> <button
-                    onclick="location.href = 'Galerea koty prikoly foto.html'">Фото</button>
-                <button onclick="location.href = 'Galerea koty prikoly_video.html'">Видео</button>
+                    onclick="openNewWin('Galerea koty prikoly foto.html')">Фото</button>
+                <button onclick="openNewWin( 'Galerea koty prikoly_video.html')">Видео</button>
             </td>
         </tr>
         <tr>
             <td>
                 <div class="rozdel" > <strong> Я в <br> эвакуации</strong></div> <button
-                    onclick="location.href = 'Galerea v evakuazii_foto.html'">Фото</button>
-                <button onclick="location.href = 'Galerea v evakuazii_video.html'">Видео</button>
+                    onclick="openNewWin( 'Galerea v evakuazii_foto.html')">Фото</button>
+                <button onclick="openNewWin( 'Galerea v evakuazii_video.html')">Видео</button>
             </td>
             <td>
                 <div class="rozdel"> <strong> Собаки <br> приколы</strong></div> <button
-                    onclick="location.href = 'Galerea sobaki prikoly foto.html'">Фото</button>
-                <button onclick="location.href = 'Galerea sobaki prikoly_video.html'">Видео</button>
+                    onclick="openNewWin( 'Galerea sobaki prikoly foto.html')">Фото</button>
+                <button onclick="openNewWin( 'Galerea sobaki prikoly_video.html')">Видео</button>
             </td>
         </tr>
         <tr>
@@ -288,25 +284,25 @@
                 <font style="font-size:25px;"> <strong> Развлечения</strong></font> <br>
 
                 <div>
-                    <a href="igry/1 canvas-tetris-master/index.html"><img src="igry/1 canvas-tetris-master/kartinka.png"
+                    <a href="igry/1 canvas-tetris-master/index.html" target="_blank"><img src="igry/1 canvas-tetris-master/kartinka.png"
                             class="igry" alt="тетрис" title="тетрис"></a>
 
-                    <a href="igry/2 hextris-gh-pages/index.html"><img src="igry/2 hextris-gh-pages/kartinka.png"
+                    <a href="igry/2 hextris-gh-pages/index.html" target="_blank"><img src="igry/2 hextris-gh-pages/kartinka.png"
                             class="igry" alt="Хектрис" title="Хектрис"></a>
 
-                    <a href="igry/3 2048-master/index.html"><img src="igry/3 2048-master/kartinka.jpg" class="igry"
+                    <a href="igry/3 2048-master/index.html" target="_blank"><img src="igry/3 2048-master/kartinka.jpg" class="igry"
                             alt="2048" title="2048"></a>
 
-                    <a href="igry/4 neon ball/index.html"><img src="igry/4 neon ball/kartinka.jpg" class="igry"
+                    <a href="igry/4 neon ball/index.html" target="_blank"><img src="igry/4 neon ball/kartinka.jpg" class="igry"
                             alt="неоновый шар" title="неоновый шар"></a>
 
-                    <a href="igry/5 SURVIVAL GAME/index.html"><img src="igry/5 SURVIVAL GAME/kartinka.jpg" class="igry"
+                    <a href="igry/5 SURVIVAL GAME/index.html" target="_blank"><img src="igry/5 SURVIVAL GAME/kartinka.jpg" class="igry"
                             alt="змейка" title="змейка"></a>
 
-                    <a href="igry/6 karts/index.html"><img src="igry/6 karts/kartinka.jpg" class="igry" alt="гонки"
+                    <a href="igry/6 karts/index.html" target="_blank"><img src="igry/6 karts/kartinka.jpg" class="igry" alt="гонки"
                             title="гонки"></a>
 
-                    <a href="igry/7 panda/index.html"><img src="igry/7 panda/kartinka.jpg" class="igry" alt="панда"
+                    <a href="igry/7 panda/index.html" target="_blank"><img src="igry/7 panda/kartinka.jpg" class="igry" alt="панда"
                             title="панда"></a>
                 </div>
             </td>
@@ -314,8 +310,13 @@
 
             <td >
                 <!--  Радио -->
-                
-                <button id="radiobells_container" onclick="window.open('Radio.html', 'radio', 'width=185,height=350,top='+((screen.height/100)*30)+',left='+((screen.width/100)*90)+',' )" > Радио </button>
+                <div id="radiobells_container"><a href="https://www.radiobells.com/"
+                        id="RP_link">Онлайн радио</a>
+                    #radiobells_script_hash</div>
+                <link href="https://www.radiobells.com/script/style.css" type="text/css" rel="stylesheet" />
+                <script
+                    type="text/javascript">var rad_backcolor = "#fbfff2"; var rad_logo = "white"; var rad_autoplay = false; var rad_width = "responsive"; var rad_width_px = 200; var rad_stations = [['https://cast.radiogroup.com.ua/retro', 'Ретро FM Украина', 'retrofm'],['https://www.liveradio.es/http://online.radioroks.ua/RadioROKS_HD', 'Radio Roks', 'radiorocks'], ['https://www.liveradio.es/http://online.hitfm.ua/HitFM_HD', 'Хiт FM', 'hitfmua'], ['https://cast.radiogroup.com.ua/shanson96.aac','Радио Шансон Украина','shansonua'],['https://pub0301.101.ru:8443/stream/pro/aac/64/1','Дискотека 80-х','disco80'],['https://link.smmbox.ru/http://online.kissfm.ua/KissFM_HD', 'Kiss FM', 'kissfm']];</script>
+                <script type="text/javascript" src="https://www.radiobells.com/script/v2_1.js" charset="UTF-8"></script>
             </td>
         </tr>
     </table>
@@ -359,6 +360,10 @@
             element4.style.left = 90 + '%'; element4.style.top = 75 + '%';
 
         }
+
+        function openNewWin(url) { //открытие вкладок в новом окне
+  myWin= open(url);
+}
         
 
     </script>

@@ -50,7 +50,7 @@ h1.title {
     top: -50px;
     opacity: 0; } }
 .scores-container {
-  float: right;
+  float: left;
   text-align: right; }
 
 .score-container, .best-container {
@@ -121,6 +121,12 @@ hr {
 .container {
   width: 500px;
   margin: 0 auto; }
+
+  @media (max-width: 1000px) and (orientation:Landscape) {
+ /* для горизонтальной мобильной версии*/
+    .container {
+      zoom: 50%;
+       }}
 
 @-webkit-keyframes fade-in {
   0% {
