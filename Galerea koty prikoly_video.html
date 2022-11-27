@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" CONTENT="Эвакуированный. Кот. Из славянска.Коты приколы. Развлечения. Фото. Видео. Галерея.">
-    <META name="keywords" CONTENT="Эвакуированный,эвакуация,кот,в эвакуации, до эвакуации,славянск,покорми эвакуированного,радио,развлечения,фото,видео,собаки,коты,приколы">
+    <meta name="description"
+        CONTENT="Эвакуированный. Кот.  Из Донбасса.Коты приколы. Развлечения. Фото. Видео. Галерея.">
+    <META name="keywords"
+        CONTENT="Эвакуированный,эвакуация,кот,в эвакуации, до эвакуации,Донбасс,покорми эвакуированного,радио,развлечения,фото,видео,собаки,коты,приколы">
     <title>Коты приколы видео</title>
     <style type="text/css">
         body {
@@ -14,14 +16,17 @@
             background-repeat: no-repeat;
             background-attachment: fixed
         }
-.foto{position: absolute;
-    display: inline-block;
-    left: 1%;
-    top: 12%;
-    width: 98%;
-    height: 88%;
-    overflow: auto;
-    text-align: center;}
+
+        .foto {
+            position: absolute;
+            display: inline-block;
+            left: 1%;
+            top: 12%;
+            width: 98%;
+            height: 88%;
+            overflow: auto;
+            text-align: center;
+        }
 
         .menu {
             display: inline-block;
@@ -34,7 +39,7 @@
             font: bold 20px/1.4'Comic Sans MS';
         }
 
-        .menu:hover{
+        .menu:hover {
             outline: 4px solid rgb(25, 0, 255);
         }
 
@@ -44,7 +49,27 @@
             margin-bottom: 100px;
         }
 
-       
+        #Pokormi {
+
+            position: fixed;
+            z-index: 1000;
+            left: -65%;
+            width: 60%;
+            top: 15%;
+            display: inline-block;
+            border: 3px solid #3816d1f3;
+            border-radius: 10px;
+            background-color: rgba(113, 160, 190, 0.925);
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Comic Sans MS;
+            transition: left 1s cubic-bezier(0.5, 0, 0.5, 1);
+
+        }
+
+
 
         @media (max-width:1550px) {
 
@@ -58,6 +83,10 @@
                 width: 65%;
                 height: 90%;
                 margin-bottom: 50px;
+            }
+
+            #Pokormi {
+                font-size: 16px;
             }
 
         }
@@ -75,13 +104,18 @@
                 height: 30%;
                 margin-bottom: 50px;
             }
-            .foto{
-    
+
+            .foto {
+
                 height: 90%;
-    top: 6%;
-   
-   
-    }
+                top: 6%;
+
+
+            }
+
+            #Pokormi {
+                font-size: 30px;
+            }
 
         }
     </style>
@@ -95,21 +129,22 @@
         <div id="glavnay" class="menu" onclick="location.href = 'index.html', window.close()">
             На главную
         </div>
-        <div id="pismo" class="menu"  onclick="location.href='mailto:lemon.orange1111@gmail.com?subject=Вопросы, пожелания, предложения &Body=Текст письма:' "
-        title="Пожелания, предложения, вопросы">
+        <div id="pismo" class="menu"
+            onclick="location.href='mailto:lemon.orange1111@gmail.com?subject=Вопросы, пожелания, предложения &Body=Текст письма:' "
+            title="Пожелания, предложения, вопросы">
             Написать письмо
         </div>
-        <div id="Nakorm" class="menu">
+        <div id="Nakorm" class="menu"  onclick="jjj()">
             Покорми эвакуированного
         </div>
     </div>
 
 
-    <div class="foto"  title="коты приколы">
+    <div class="foto" title="коты приколы">
 
 
 
-        <iframe src="https://www.youtube.com/embed/7-W7gzBkNz0"  title="YouTube video player" frameborder="0"
+        <iframe src="https://www.youtube.com/embed/7-W7gzBkNz0" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
 
@@ -149,8 +184,32 @@
     </div>
 
 
+ <div id="Pokormi">Если хочешь покормить меня- <br> перечисли на карту моей хозяйки <br> 5375 4141 2335 3640 <br>
+        любую
+        сумму, если не
+        хочешь- <br> не перечисляй, <br> просто посмотри мои фото и видео, <br> но знай, <br> если ты всё же
+        решишься,<br> то я(кот)<br> буду сытым, довольным и благодарным.<br><br>А еще моя хозяйка любит кормить
+        бездомных животных.<br><br>
+        <div style="border: 3px solid #3816d1f3;
+        border-radius: 10px;
+        background-color: rgba(22, 101, 150, 0.925);
+        text-align: center;
+        padding: 10px;cursor: pointer;
+       " onclick="jj()">Не люблю животных</div>
+    </div>
 
+    <script>
 
+        function jjj() { // выезжает окно покорми меня
+            elem = document.getElementById('Pokormi');
+            elem.style.left = 19 + '%'
+        }
+        function jj() { // заезжает окно покорми меня
+            elem = document.getElementById('Pokormi');
+            elem.style.left = (-65) + '%'
+        }
+
+    </script>
 
 </body>
 

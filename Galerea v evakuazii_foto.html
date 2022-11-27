@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" CONTENT="Эвакуированный. Кот. Из славянска. До эвакуации. В эвакуации. Радио. Развлечения. Фото. Видео. Галерея.">
-    <META name="keywords" CONTENT="Эвакуированный,эвакуация,кот,в эвакуации, до эвакуации,славянск,покорми эвакуированного,радио,развлечения,фото,видео,собаки,коты,приколы">
+    <meta name="description" CONTENT="Эвакуированный. Кот. Из Донбасса. До эвакуации. В эвакуации. Радио. Развлечения. Фото. Видео. Галерея.">
+    <META name="keywords" CONTENT="Эвакуированный,эвакуация,кот,в эвакуации, до эвакуации,Донбасс,покорми эвакуированного,радио,развлечения,фото,видео,собаки,коты,приколы">
     <title>Эвакуированный в эвакуации фото</title>
     <style type="text/css">
         body {
@@ -127,6 +127,25 @@
             overflow: auto;
             text-align: center;
         }
+        #Pokormi {
+
+position: fixed;
+z-index: 1000;
+left: -65%;
+width: 60%;
+top: 15%;
+display: inline-block;
+border: 3px solid #3816d1f3;
+border-radius: 10px;
+background-color: rgba(113, 160, 190, 0.925);
+text-align: center;
+padding: 10px;
+font-size: 30px;
+font-weight: bold;
+font-family: Comic Sans MS;
+transition: left 1s cubic-bezier(0.5, 0, 0.5, 1);
+
+}
 
         @media (max-width:1550px) {
 
@@ -152,6 +171,9 @@
                 width: 100px;
                 height: 100px;
                 margin: 3px
+            }
+            #Pokormi {
+                font-size: 16px;
             }
         }
 
@@ -223,6 +245,9 @@
                 width: 90%;
                 height: 35%
             }
+            #Pokormi {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
@@ -259,12 +284,26 @@
             title="Пожелания, предложения, вопросы">
             Написать <br> письмо
         </div>
-        <div id="Nakorm" class="menu">
+        <div id="Nakorm" class="menu" onclick="jjj()">
             Покорми<br>эвакуированного
         </div>
     </div>
 
     <div id="results" class="fotoMini"></div>
+
+    <div id="Pokormi">Если хочешь покормить меня- <br> перечисли на карту моей хозяйки <br> 5375 4141 2335 3640 <br>
+        любую
+        сумму, если не
+        хочешь- <br> не перечисляй, <br> просто посмотри мои фото и видео, <br> но знай, <br> если ты всё же
+        решишься,<br> то я(кот)<br> буду сытым, довольным и благодарным.<br><br>А еще моя хозяйка любит кормить
+        бездомных животных.<br><br>
+        <div style="border: 3px solid #3816d1f3;
+        border-radius: 10px;
+        background-color: rgba(22, 101, 150, 0.925);
+        text-align: center;
+        padding: 10px;cursor: pointer;
+       " onclick="jj()">Не люблю животных</div>
+    </div>
 
     <script>
         var mas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,31,32,33,34,35,36] // массив картинок
@@ -303,7 +342,14 @@
             };
         });
 
-
+        function jjj() { // выезжает окно покорми меня
+            elem = document.getElementById('Pokormi');
+            elem.style.left = 19 + '%'
+        }
+        function jj() { // заезжает окно покорми меня
+            elem = document.getElementById('Pokormi');
+            elem.style.left = (-65) + '%'
+        }
 
     </script>
 

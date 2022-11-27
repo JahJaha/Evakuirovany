@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" CONTENT="Эвакуированный. Кот. Из славянска. До эвакуации. В эвакуации. Радио. Развлечения. Фото. Видео. Галерея.">
-    <META name="keywords" CONTENT="Эвакуированный,эвакуация,кот,в эвакуации, до эвакуации,славянск,покорми эвакуированного,радио,развлечения,фото,видео,собаки,коты,приколы">
-    <title>Эвакуированный кот из Славянска</title>
+    <meta name="description"
+        CONTENT="Эвакуированный. Кот. Из Донбасса. До эвакуации. В эвакуации. Радио. Развлечения. Фото. Видео. Галерея.">
+    <META name="keywords"
+        CONTENT="Эвакуированный,эвакуация,кот,в эвакуации, до эвакуации,Донбасс,покорми эвакуированного,радио,развлечения,фото,видео,собаки,коты,приколы">
+    <title>Эвакуированный кот из Донбасса</title>
 
     <style type="text/css">
         body {
@@ -31,7 +33,7 @@
 
         td {
             border: 5px solid rgba(10, 218, 233, 0.493);
-            
+
             font-family: comic sans ms;
             text-align: center;
             border-radius: 30px;
@@ -55,6 +57,7 @@
             width: 80%;
             height: 80%;
         }
+
         #babohka1,
         #babohka2,
         #babohka3,
@@ -66,17 +69,38 @@
             transition: left 5s cubic-bezier(0.5, 0, 0.5, 1), top 5s cubic-bezier(0.5, 0, 0.5, 1)
         }
 
-        #babohka{ position: absolute;background-color: rgba(123, 211, 211, 0.925);border: 5px solid rgba(10, 218, 233, 0.493);
-                top: 75%;left: 82%; width: 15%;text-align: center;
-                font-size: 14px;font-weight: bold;
-                font-family: comic sans ms;color: brown;
-                border-radius: 30px;cursor: pointer;}
+        #babohka {
+            position: absolute;
+            background-color: rgba(123, 211, 211, 0.925);
+            border: 5px solid rgba(10, 218, 233, 0.493);
+            top: 75%;
+            left: 82%;
+            width: 15%;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: comic sans ms;
+            color: brown;
+            border-radius: 30px;
+            cursor: pointer;
+        }
 
-                #babohkaDva  { position: absolute; display:none;background-color: rgba(123, 211, 211, 0.925);border: 5px solid rgba(10, 218, 233, 0.493);
-                top: 75%;left: 82%; width: 15%;text-align: center;
-                font-size: 14px;font-weight: bold;
-                font-family: comic sans ms;color: brown;
-                border-radius: 30px;cursor: pointer}  
+        #babohkaDva {
+            position: absolute;
+            display: none;
+            background-color: rgba(123, 211, 211, 0.925);
+            border: 5px solid rgba(10, 218, 233, 0.493);
+            top: 75%;
+            left: 82%;
+            width: 15%;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: comic sans ms;
+            color: brown;
+            border-radius: 30px;
+            cursor: pointer
+        }
 
         .igry {
             width: 8%;
@@ -92,13 +116,39 @@
         .evakuirovany {
             font-size: 60px
         }
-        .pogoda{
-                zoom:95%;
-            }
-            .rozdel{
-                font-size: 35px;
-            }
-            #radiobells_container{width:230px;margin-left: 0px;}
+
+        .pogoda {
+            zoom: 95%;
+        }
+
+        .rozdel {
+            font-size: 35px;
+        }
+
+        #radiobells_container {
+            width: 230px;
+            margin-left: 0px;
+        }
+
+        #Pokormi {
+
+            position: fixed;
+            z-index: 300;
+            left: -65%;
+            width: 60%;
+            top: 15%;
+            display: inline-block;
+            border: 3px solid #3816d1f3;
+            border-radius: 10px;
+            background-color: rgba(113, 160, 190, 0.925);
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Comic Sans MS;
+            transition: left 1s cubic-bezier(0.5, 0, 0.5, 1);
+
+        }
 
         @media (max-width:1000px) {
 
@@ -119,9 +169,9 @@
             }
 
             table {
-                
-            left: 10%;
-           
+
+                left: 10%;
+
                 border-spacing: 1px;
             }
 
@@ -143,11 +193,22 @@
             .evakuirovany {
                 font-size: 40px;
             }
-            .pogoda{
+
+            .pogoda {
                 zoom: 72%;
             }
-            .rozdel{
+
+            .rozdel {
                 font-size: 20px;
+            }
+            #radiobells_container {
+                width: 180px;
+                margin: auto;
+                zoom: 1
+            }
+
+            #Pokormi {
+                font-size: 16px;
             }
 
         }
@@ -161,18 +222,18 @@
                 left: 5%;
                 top: 35%;
                 width: 90%;
-                height: 43%;  
+                height: 43%;
             }
 
             td {
-                border:none; 
-        }
+                border: none;
+            }
 
             .foto {
                 position: fixed;
                 left: 20%;
                 top: 6%;
-                width: 60%;  
+                width: 60%;
             }
 
             .evakuirovany {
@@ -181,44 +242,60 @@
                 top: 1%;
                 font-size: 400%;
             }
+
             .razvlecheniy {
                 position: fixed;
                 left: 1%;
                 top: 87%;
             }
+
             .igry {
                 width: 10%;
                 height: 10%;
                 margin-left: 10px;
                 margin-right: 10px;
             }
+
             button {
                 font-size: 25px;
                 width: 90%;
                 height: 30%;
-        }
-        .pogoda{
+            }
+
+            .pogoda {
                 zoom: 110%;
             }
-            .rozdel{
+
+            .rozdel {
                 font-size: 40px;
             }
 
-            #babohka,#babohkaDva{
+            #babohka,
+            #babohkaDva {
                 position: fixed;
                 left: 40%;
                 top: 80%;
                 font-size: 25px
             }
+
             #babohka1,
             #babohka2,
             #babohka3,
             #babohka4 {
                 width: 100px;
                 height: 100px;
-            } 
-            #radiobells_container{width:200px; margin: auto;zoom: 1.4;}     
-    }
+            }
+
+            #radiobells_container {
+                width: 200px;
+                margin: auto;
+                zoom: 1.4;
+            }
+
+            #Pokormi {
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 
@@ -226,7 +303,7 @@
 
     <table>
         <tr>
-            <td ><button class="knopka1"
+            <td><button class="knopka1"
                     onclick="location.href='mailto:lemon.orange1111@gmail.com?subject=Вопросы, пожелания, предложения &Body=Текст письма:' "
                     title="Пожелания, предложения, вопросы"><strong> Написать<br> письмо</strong></button> </td>
             <td class="evakuirovany">
@@ -234,16 +311,17 @@
                 <strong> Эвакуированный</strong>
 
             </td>
-            <td ><button class="knopka1" onclick=""> <strong> Покорми <br> эвакуированного</strong></button></td>
+            <td><button class="knopka1" onclick="jjj()"> <strong> Покорми <br> эвакуированного</strong></button></td>
         </tr>
         <tr>
             <td>
                 <div class="rozdel"> <strong> Я до <br> эвакуации</strong></div> <button
                     onclick="openNewWin('Galerea do evakuazii_foto.html')">Фото</button>
                 <button onclick="openNewWin( 'Galerea do evakuazii_video.html')">Видео</button>
-            </td >
-            <td rowspan="2"style="position:relative;">
-                <center><img src="glavnoe.png" class="foto" alt="Это моя фотка!!!" title="Это я, эвакуированный из Славянска"></center>
+            </td>
+            <td rowspan="2" style="position:relative;">
+                <center><img src="glavnoe.png" class="foto" alt="Это моя фотка!!!"
+                        title="Это я, эвакуированный из Донбасса"></center>
 
                 <div id="babohkaDva">Верни бабочек</div>
 
@@ -258,7 +336,7 @@
         </tr>
         <tr>
             <td>
-                <div class="rozdel" > <strong> Я в <br> эвакуации</strong></div> <button
+                <div class="rozdel"> <strong> Я в <br> эвакуации</strong></div> <button
                     onclick="openNewWin( 'Galerea v evakuazii_foto.html')">Фото</button>
                 <button onclick="openNewWin( 'Galerea v evakuazii_video.html')">Видео</button>
             </td>
@@ -271,7 +349,7 @@
         <tr>
             <td>
 
-                <div class="pogoda" >
+                <div class="pogoda">
 
                     <!-- weather widget start --><a target="_blank" href="https://nochi.com/weather/dnipro-33401"><img
                             src="https://w.bookcdn.com/weather/picture/2_33401_1_20_009fde_250_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=604&anc_id=32222"
@@ -284,42 +362,55 @@
                 <font style="font-size:25px;"> <strong> Развлечения</strong></font> <br>
 
                 <div>
-                    <a href="igry/1 canvas-tetris-master/index.html" target="_blank"><img src="igry/1 canvas-tetris-master/kartinka.png"
-                            class="igry" alt="тетрис" title="тетрис"></a>
+                    <a href="igry/1 canvas-tetris-master/index.html" target="_blank"><img
+                            src="igry/1 canvas-tetris-master/kartinka.png" class="igry" alt="тетрис" title="тетрис"></a>
 
-                    <a href="igry/2 hextris-gh-pages/index.html" target="_blank"><img src="igry/2 hextris-gh-pages/kartinka.png"
-                            class="igry" alt="Хектрис" title="Хектрис"></a>
+                    <a href="igry/2 hextris-gh-pages/index.html" target="_blank"><img
+                            src="igry/2 hextris-gh-pages/kartinka.png" class="igry" alt="Хектрис" title="Хектрис"></a>
 
-                    <a href="igry/3 2048-master/index.html" target="_blank"><img src="igry/3 2048-master/kartinka.jpg" class="igry"
-                            alt="2048" title="2048"></a>
+                    <a href="igry/3 2048-master/index.html" target="_blank"><img src="igry/3 2048-master/kartinka.jpg"
+                            class="igry" alt="2048" title="2048"></a>
 
-                    <a href="igry/4 neon ball/index.html" target="_blank"><img src="igry/4 neon ball/kartinka.jpg" class="igry"
-                            alt="неоновый шар" title="неоновый шар"></a>
+                    <a href="igry/4 neon ball/index.html" target="_blank"><img src="igry/4 neon ball/kartinka.jpg"
+                            class="igry" alt="неоновый шар" title="неоновый шар"></a>
 
-                    <a href="igry/5 SURVIVAL GAME/index.html" target="_blank"><img src="igry/5 SURVIVAL GAME/kartinka.jpg" class="igry"
-                            alt="змейка" title="змейка"></a>
+                    <a href="igry/5 SURVIVAL GAME/index.html" target="_blank"><img
+                            src="igry/5 SURVIVAL GAME/kartinka.jpg" class="igry" alt="змейка" title="змейка"></a>
 
-                    <a href="igry/6 karts/index.html" target="_blank"><img src="igry/6 karts/kartinka.jpg" class="igry" alt="гонки"
-                            title="гонки"></a>
+                    <a href="igry/6 karts/index.html" target="_blank"><img src="igry/6 karts/kartinka.jpg" class="igry"
+                            alt="гонки" title="гонки"></a>
 
-                    <a href="igry/7 panda/index.html" target="_blank"><img src="igry/7 panda/kartinka.jpg" class="igry" alt="панда"
-                            title="панда"></a>
+                    <a href="igry/7 panda/index.html" target="_blank"><img src="igry/7 panda/kartinka.jpg" class="igry"
+                            alt="панда" title="панда"></a>
                 </div>
             </td>
 
 
-            <td >
+            <td>
                 <!--  Радио -->
-                <div id="radiobells_container"><a href="https://www.radiobells.com/"
-                        id="RP_link">Онлайн радио</a>
+                <div id="radiobells_container"><a href="https://www.radiobells.com/" id="RP_link">Онлайн радио</a>
                     #radiobells_script_hash</div>
                 <link href="https://www.radiobells.com/script/style.css" type="text/css" rel="stylesheet" />
                 <script
-                    type="text/javascript">var rad_backcolor = "#fbfff2"; var rad_logo = "white"; var rad_autoplay = false; var rad_width = "responsive"; var rad_width_px = 200; var rad_stations = [['https://cast.radiogroup.com.ua/retro', 'Ретро FM Украина', 'retrofm'],['https://www.liveradio.es/http://online.radioroks.ua/RadioROKS_HD', 'Radio Roks', 'radiorocks'], ['https://www.liveradio.es/http://online.hitfm.ua/HitFM_HD', 'Хiт FM', 'hitfmua'], ['https://cast.radiogroup.com.ua/shanson96.aac','Радио Шансон Украина','shansonua'],['https://pub0301.101.ru:8443/stream/pro/aac/64/1','Дискотека 80-х','disco80'],['https://link.smmbox.ru/http://online.kissfm.ua/KissFM_HD', 'Kiss FM', 'kissfm']];</script>
+                    type="text/javascript">var rad_backcolor = "#fbfff2"; var rad_logo = "white"; var rad_autoplay = false; var rad_width = "responsive"; var rad_width_px = 200; var rad_stations = [['https://cast.radiogroup.com.ua/retro', 'Ретро FM Украина', 'retrofm'], ['https://www.liveradio.es/http://online.radioroks.ua/RadioROKS_HD', 'Radio Roks', 'radiorocks'], ['https://www.liveradio.es/http://online.hitfm.ua/HitFM_HD', 'Хiт FM', 'hitfmua'], ['https://cast.radiogroup.com.ua/shanson96.aac', 'Радио Шансон Украина', 'shansonua'], ['https://pub0301.101.ru:8443/stream/pro/aac/64/1', 'Дискотека 80-х', 'disco80'], ['https://link.smmbox.ru/http://online.kissfm.ua/KissFM_HD', 'Kiss FM', 'kissfm']];</script>
                 <script type="text/javascript" src="https://www.radiobells.com/script/v2_1.js" charset="UTF-8"></script>
             </td>
         </tr>
     </table>
+
+    <div id="Pokormi">Если хочешь покормить меня- <br> перечисли на карту моей хозяйки <br> 5375 4141 2335 3640 <br>
+        любую
+        сумму, если не
+        хочешь- <br> не перечисляй, <br> просто посмотри мои фото и видео, <br> но знай, <br> если ты всё же
+        решишься,<br> то я(кот)<br> буду сытым, довольным и благодарным.<br><br>А еще моя хозяйка любит кормить
+        бездомных животных.<br><br>
+        <div style="border: 3px solid #3816d1f3;
+        border-radius: 10px;
+        background-color: rgba(22, 101, 150, 0.925);
+        text-align: center;
+        padding: 10px;cursor: pointer;
+       " onclick="jj()">Не люблю животных</div>
+    </div>
 
 
     <img id="babohka1" src="babohka1.gif" style="left:2%; top:2%;">
@@ -353,18 +444,25 @@
             element1 = document.getElementById('babohka1');
             element1.style.left = 2 + '%'; element1.style.top = 2 + '%';
             element2 = document.getElementById('babohka2');
-            element2.style.left =2 + '%'; element2.style.top = 75 + '%';
+            element2.style.left = 2 + '%'; element2.style.top = 75 + '%';
             element3 = document.getElementById('babohka3');
-            element3.style.left = 90 + '%'; element3.style.top =  2 + '%';
+            element3.style.left = 90 + '%'; element3.style.top = 2 + '%';
             element4 = document.getElementById('babohka4');
             element4.style.left = 90 + '%'; element4.style.top = 75 + '%';
 
         }
 
         function openNewWin(url) { //открытие вкладок в новом окне
-  myWin= open(url);
-}
-        
+            myWin = open(url);
+        }
+        function jjj() { // выезжает окно покорми меня
+            elem = document.getElementById('Pokormi');
+            elem.style.left = 19 + '%'
+        }
+        function jj() { // заезжает окно покорми меня
+            elem = document.getElementById('Pokormi');
+            elem.style.left = (-65) + '%'
+        }
 
     </script>
 
